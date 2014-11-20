@@ -283,7 +283,7 @@ abstract class RT implements IAppConstants
                 // by returning something here [e.g., unique class ID (solves the
                 // issues of class name collisions and class reloading) or RT.class
                 // (to prevent RT reloading)]
-                
+                System.out.println("Class:" + classVMName);
                 cdata.addClass (coverage, classVMName, stamp);
             }
         }
